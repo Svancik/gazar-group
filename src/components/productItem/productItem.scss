@@ -1,0 +1,70 @@
+$lineHeight: 1.2em;
+.product-cell {
+    border: 3px solid transparent;
+    padding: 8px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.54);
+    position: relative;
+    border-radius: 25px;
+    background-image: linear-gradient(white, rgb(255, 255, 255)), linear-gradient(315deg, rgb(255, 222, 160), rgb(236, 183, 37), rgb(250, 94, 94));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    // border: 2px solid #dddddd;
+    // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    // background: linear-gradient(to bottom, transparent, white, rgb(235, 235, 235));
+
+    transition: all 0.3s ease-in;
+    &:hover{
+      cursor: pointer;
+      //border: 3px solid rgba(250,232,105,255);
+      border: 3px solid #2879fe;
+
+    }
+  
+    .product-img{
+      margin-top: 5px;
+    }
+    img {
+      max-width: 95%;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+  
+    
+    .product-info {
+      .info-row {
+        font-size: 14px;
+        margin-bottom: 0px;
+        
+      }
+      .product-name{
+        font-weight: 500;
+        font-size: 16px;
+        width: 98%;
+        margin: auto;
+        overflow: hidden;
+        min-height: $lineHeight * 3; // Minimum height for 3 rows
+        max-height: $lineHeight * 3; // Maximum height for 3 rows
+        line-height: $lineHeight;
+      }
+      .product-category{
+        background-color: rgba(250,232,105,255);
+        background: linear-gradient(to left, rgb(250,232,105),rgb(254, 244, 166));
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom: 1px solid black;
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        left: 0%;
+        font-size: 12px;
+        font-weight: 500;
+        height: 25px;
+        line-height: 30px;
+      }
+    }
+  }

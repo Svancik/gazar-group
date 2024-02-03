@@ -1,0 +1,54 @@
+.categoryDropdownWrap{
+
+   // box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    margin-top: -3px;
+    label{
+        margin-right: 10px;
+    }
+
+    select{
+        font-size: 22px;
+
+    .subCategory{
+        right: 0%;
+        background-color: rgb(255, 255, 255);
+        text-indent: 10px; 
+        margin-left: 10em;       
+        font-size: 16px; 
+        text-align: left;
+    }
+    
+    .mainCategory{
+        font-weight: 700;
+        font-size: 18px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        text-transform: uppercase;
+
+    }
+    option{
+        font-weight: 500;
+        &:hover{
+            cursor: pointer;
+          }
+    }
+    &:hover{
+        cursor: pointer;
+      }
+    }
+
+    .linear-background-select{
+        width: 250px;
+        border: 3px solid black;
+        border: 3px solid transparent;
+        background-image: linear-gradient(white, rgb(255, 255, 255)), linear-gradient(315deg, rgb(236, 183, 37), rgb(250, 94, 94), rgb(255, 222, 160), rgb(250, 94, 94));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+
+        
+
+      }
+
+
+
+}

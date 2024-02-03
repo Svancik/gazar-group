@@ -1,0 +1,64 @@
+.infoPanelWrapper{
+    height: 8vh;
+    max-width: 1820px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+
+    .left{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        margin-left: 7.5px;
+
+        .column{
+            flex-direction: column;
+            width: max-content;           
+            margin: auto;
+        }
+
+        .row{
+            display: flex;      
+            gap: 12px;
+            flex: 1;
+
+            span{
+                line-height: 45px;
+                vertical-align: middle;
+                font-size: 19px;
+                font-weight: 500;
+                text-align: center;
+            }      
+            .iconWrap{
+                border: 2px solid black;
+                border-radius: 50%;
+                width: 42px;
+                height: 42px;
+                padding: 4px;
+                background-color: white;
+                border: 3px solid transparent;
+        background-image: linear-gradient(white, rgb(255, 255, 255)), linear-gradient(315deg, rgb(236, 183, 37), rgb(250, 94, 94), rgb(255, 222, 160), rgb(250, 94, 94));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+   
+
+                .icon{
+                    display: flex;
+                    margin: auto;
+                    line-height: 30px;
+                    vertical-align: middle;
+                    margin-top: 3px;
+                    height: 35px;                    
+                    width: 35px;
+                    color: #fc8444 ;
+                    color: black;
+                }
+            }            
+        }
+
+        hr{
+            width: 60%;
+            margin-left: 20px;
+        }
+    }
+}

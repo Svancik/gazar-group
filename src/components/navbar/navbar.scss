@@ -1,0 +1,435 @@
+.dropdown-menu-container {
+    position: relative;
+    display: none;
+  }
+
+.title-container{
+    display: none;
+}
+
+  .dropdown-menu{
+    display: block;
+    
+    position: absolute;
+    top: 40px; /* Adjust the top position based on your design */
+    right: 4.75%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    border: none;
+    cursor: pointer;
+}
+
+.topbarWrap{
+    background-color: #f0f0f0; /* Set your background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    height: 65px;
+    width: 100%; 
+    z-index: 9999999;
+    line-height: 65px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    header{
+        display: flex;
+        float: right; 
+        height: inherit;
+        gap: 40px;
+        .headerItem{
+            height: inherit;
+            .link{
+                span{
+                    margin-top: 15px;
+                    font-weight: 400;
+                    font-size: 22.5px;
+                    flex: auto;
+                    text-align: center;
+                    transition: all 60ms ease-in-out;
+                    font-weight: 500;
+            
+                    &:hover{
+                        color: #2879fe;
+                        cursor: pointer;                  
+                    }
+                }
+        }
+        }
+
+
+}
+}   
+
+
+
+// PHONE VIEW width 320px
+@media screen and ((min-width: 320px) and (orientation: portrait)) {
+    .navbarWrapper{       
+        display: flex;
+        flex-direction: column;      
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+        width: 100%;
+    
+        .dropdown-menu-container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            height: 3rem;
+
+            .titleWrap{
+                width: 200px;
+                height: 50px;
+
+                h1,h2{
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    gap: 0px;
+                    position: absolute;                    
+                }
+
+                h1{
+                    font-weight: 400;
+                    font-size: 28px;
+                    top: 7.25%;
+                    left: 2.5%;
+                    margin-top: -5px;                    
+                }
+                h2{
+                    font-weight: 300;
+                    font-size: 18px;
+                    top: 51.5%;
+                    left: 14%;
+                }
+            }
+
+            .buttonWrap{
+                .toggle-button{
+                    .toggle-button-icon{
+                        width: 3rem;
+                        height: 2rem;
+                    }
+                }
+            }         
+            .dropdown-menu{
+                margin-top: -4.5px;
+                margin-right: 12px;
+                width: 170px;
+                display: block;
+                z-index: 999;
+                border: 2px solid black;
+                background-color: rgba(255, 255, 255, 0.967);
+    
+                .headerItem{
+                    height: 30px;
+                    line-height: 30px;
+                    padding-left: 10px;
+                    border-bottom: 1px solid black;
+                    text-transform: capitalize;
+                    span{
+                        text-align: center;
+                        font-size: 14px;
+                        font-weight: 500;
+                        text-transform:uppercase;
+                    }
+                }
+    
+            }
+        }
+    }   
+
+}
+
+/*    TABLETS     */
+// 768x1024 - iPad
+@media screen and ((min-width: 768px) and (orientation: portrait)) {
+    .topbarWrap{
+        display: none;
+    }
+
+    
+
+    .navbarWrapper{       
+        display: flex;
+        flex-direction: column;      
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    
+        .dropdown-menu-container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            float: right;
+            height: 3rem;
+
+            .titleWrap{
+                width: 200px;
+                height: 50px;
+
+                h1,h2{
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    gap: 0px;
+                    position: absolute;                    
+                }
+
+                h1{
+                    font-weight: 400;
+                    font-size: 28px;
+                    top: 7.25%;
+                    left: 2.5%;
+                    margin-top: -5px;                    
+                }
+                h2{
+                    font-weight: 300;
+                    font-size: 18px;
+                    top: 51.5%;
+                    left: 8%;
+                }
+            }
+
+            .buttonWrap{
+                .toggle-button{
+                    .toggle-button-icon{
+                        width: 3rem;
+                        height: 2rem;
+                    }
+                }
+            }         
+            .dropdown-menu{
+                margin-top: -2.5px;
+                margin-right: -7.5px;
+                width: 210px;
+                display: block;
+                z-index: 999;
+                border: 3px solid black;
+                background-color: rgba(255, 255, 255, 0.967);
+    
+                .headerItem{
+                    height: 30px;
+                    line-height: 30px;
+                    padding-left: 10px;
+                    border-bottom: 1px solid black;
+                    span{
+                        text-align: center;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                }
+    
+            }
+        }
+    }   
+}
+
+// 2048x2732 - iPad Pro
+@media screen and ((min-width: 2048px) and (orientation: portrait)) {
+
+    .navbarWrapper{
+        //PC
+        .topbarWrap{  
+            display: none;
+        }     
+
+        .dropdown-menu-container{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            float: right;
+            height: 10rem;
+
+            .titleWrap{
+                width: 20rem;
+                height: 9rem;
+
+                h1,h2{
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    gap: 0px;
+                    position: absolute;                    
+                }
+
+                h1{
+                    font-weight: 400;
+                    font-size: 5rem;
+                    top: 2.25%;
+                    left: 1.5%;
+                    margin-top: -5px;                    
+                }
+                h2{
+                    font-weight: 300;
+                    font-size: 4rem;
+                    top: 45.5%;
+                    left: 5.95%;
+                }
+            }
+
+            .buttonWrap{
+                .toggle-button{
+                    .toggle-button-icon{
+                        margin-top: 1rem;
+                        width: 5rem;
+                        height: 5rem;
+                    }
+                }
+            }
+           
+            
+            .dropdown-menu{
+                margin-top: 75px;
+                margin-right: -7.5px;
+                width: 550px;
+                display: block;
+                z-index: 999;
+                border: 3px solid black;
+                background-color: rgba(255, 255, 255, 0.967);
+    
+                .headerItem{
+                    height: 5rem;
+                    line-height: 5rem;
+                    padding-left: 2rem;
+                    border-bottom: 1px solid black;
+                    span{
+                        text-align: center;
+                        font-size: 2.75rem;
+                        font-weight: 500;
+                    }
+                }
+    
+            }
+        }
+        
+      
+    }
+
+}
+
+/*    DESKTOPS AND LAPTOPS */
+//1600x900 HD+ LAPTOP
+@media screen and ((min-width: 1600px) and (orientation: landscape)) {
+
+    .navbarWrapper{
+        width: 100%;
+
+        .hide-on-phone{
+            display: block;
+        }
+
+        .topbarWrap{  
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            display: flex;        
+            text-align: right;
+
+            .titleWrap{
+                width: 200px;
+                height: 50px;
+
+                h1,h2{
+                    margin-top: 0px;
+                    padding-top: 0px;
+                    gap: 0px;
+                    position: absolute;                    
+                }
+
+                h1{
+                    font-weight: 400;
+                    font-size: 28px;
+                    top: 0.25%;
+                    left: 10.5%;
+                    margin-top: -5px;                    
+                }
+                h2{
+                    font-weight: 300;
+                    font-size: 18px;
+                    top: 25%;
+                    left: 12.25%;
+                }
+            }
+        
+                header{
+                    width: 85%;
+                    justify-content: right;  
+                    .headerItem{     
+                        span{
+                            font-size: 18px;   
+                            color: black;
+                        }
+                    } 
+                }
+
+            }
+    }        
+}
+//1920x1080 FULL HD
+@media screen and (min-width: 1920px) and (orientation: landscape) {
+    .topbarWrap{   
+       
+        header{
+            width: 45%;
+            
+            span{
+                font-size: 20px;   
+                color: black;
+            }
+        }
+    }    
+}
+//2560x1440 2K
+@media screen and (min-width: 2500px) and (orientation: landscape) {
+    .topbarWrap{
+        header{            
+            width: 50%;
+           .headerItem{
+            span{
+                font-size: 22px;
+            }
+           }
+        }
+        .cartIconWrap{
+            margin-left: 1px;
+            line-height: 72.5px;
+            vertical-align: middle;
+            position: relative;
+            margin-left: 15px;
+            padding: 0px 17.5px;
+            transition: all 0.3s ease-in;
+            margin-right: 200px;
+            &:hover{
+                cursor: pointer;
+                color: #2879fe;
+            }
+
+            .cartIcon{
+                height: 28px;
+                width: 28px;
+                margin-top: -2px;
+            }
+
+            span{
+
+                font-size: 12px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #2879fe;
+                color: white;
+                position: absolute;
+                right: 12.5px;
+                top: 2.75px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+

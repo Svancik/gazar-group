@@ -1,0 +1,41 @@
+.currentPage{
+    background-color: #2879fe;    color: white;
+}
+
+/* Pagination container style */
+.paginationWrapper{
+    height: 50px;
+    width: max-content;
+    margin: auto;
+    margin-top: 25px;
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style for each pagination item */
+  .pagination-item {
+    margin-right: 10px; /* Adjust margin between items as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 8px 12px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    line-height: 20px;
+    height: 20px;
+    transition: background-color 0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  
+
+  }
+
+  .pagination-item-active{
+    background-color: #007bff;
+    color: #fff;
+  }
+}

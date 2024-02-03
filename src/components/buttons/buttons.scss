@@ -1,0 +1,25 @@
+.backButton{
+    position: absolute;
+    top: 110px;
+    left: 520px;
+    width: 80px;
+    justify-content: space-between;
+    display: flex;
+    background-color: #2879fe;
+    color: white;
+    border: 1px solid #2879fe;
+    cursor: pointer;                    
+    font-weight: 500;
+    transition: all 0.3s ease-in;
+    padding: 10px;
+    padding-right: 20px;
+    text-transform: uppercase;
+    z-index: 99999;
+    font-size: 18px;
+    margin-left: -55px;
+    &:hover{
+        cursor: pointer;
+        background-color: white;
+        color: #2879fe;
+    }
+}

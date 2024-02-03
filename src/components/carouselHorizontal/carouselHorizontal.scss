@@ -1,0 +1,44 @@
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+ 
+  position: absolute;
+  top: 52.75%;
+  left: 0%;
+}
+
+.carousel-row {
+  display: flex;
+  width: max-content;
+  flex-wrap: nowrap;
+  margin-left: -100px;
+  gap: 40px;
+  transition: transform 0.5s ease;
+  animation: carouselAnimation 40s linear infinite;
+z-index: -1;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+background-color: rgb(255, 255, 255);
+padding-left: 300px;
+padding-right: 300px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.carousel-row img {
+  margin: 7.5px 0px;
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+}
+
+@keyframes carouselAnimation {
+  0%, 100% {
+    transform: translateX(calc(80px * 2));
+  }
+  50% {
+    transform: translateX(calc(-80px * 6));
+  }
+}

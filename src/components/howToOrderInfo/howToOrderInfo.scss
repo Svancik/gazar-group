@@ -1,0 +1,76 @@
+.howToOrderInfoWrapper{
+    height: 74vh;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 65px;
+
+    h1{
+        font-weight: normal;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    hr{
+        width: 50%;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .howto-container {
+        font-family: 'Arial', sans-serif;
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      span{
+        text-align: center;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 18px;
+     
+    }
+      
+      .section {
+        margin-bottom: 0px;      
+        
+        &:nth-child(even){
+          margin-left: 50px;
+        }
+
+        &:nth-child(odd){
+          margin-left: 150px;
+        }
+        
+        .section-heading {
+          color: #333;
+          font-size: 1.5rem;
+          margin-bottom: 5px;
+          width: fit-content;
+        }
+      
+        p {
+          color: #666;
+          line-height: 1.5;
+          margin-left: 50px;
+
+        }
+
+        .step2{
+            background-color: #ffa547; // Different color for the third step
+        }
+        .step3{
+            background-color: #fe8247 // Different color for the fourth step
+        }
+        .step4{
+            background-color: #f75e4f; // Different color for the fourth step
+
+        }
+    }
+
+    
+
+}

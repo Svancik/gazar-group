@@ -1,0 +1,82 @@
+.steps-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  margin: auto;
+  margin-left: 0px;
+  float: right;
+  text-align: right;
+  margin-top: -2.5px;
+}
+
+.step {
+  text-align: center;
+  padding: 7px 10px;
+  background-color: rgba(255, 255, 255, 0.638); /* Background color for each step */
+  border: 2px solid black; /* Border color for each step */
+  border-radius: 80px; /* Adjust border-radius as needed */
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  display: flex;
+  flex-direction: row;
+  line-height: 32px;
+
+        color: black;
+        position: relative;  
+}
+
+
+
+
+.step:nth-child(1) .step-number {
+  background-color: #ffc752; // Different color for the first step
+}
+
+.step:nth-child(3) .step-number {
+  background-color: #ffa547; // Different color for the third step
+}
+
+.step:nth-child(5) .step-number {
+  background-color: #fe8247 // Different color for the fourth step
+}
+
+.step:nth-child(7) .step-number {
+  background-color: #f75e4f; // Different color for the fourth step
+}
+
+
+.step-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Color for step number */
+  border: 4px solid rgba(255,165,71,255); /* Outline color for step number */
+  border-radius: 50%; /* Create a circle */
+  width: 38px; /* Adjust the width as needed */
+  height: 38px; /* Adjust the height as needed */
+  line-height: 36px; /* Vertically center the number */
+  color: black;
+  position: absolute;
+  left: 0%;
+  top:0%;
+  background-color: rgba(255,165,71,255);
+  border: 3px solid white;
+  color: white;
+
+  color: white;
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.6); 
+
+
+}
+
+.step-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: white; /* Text color for step description */
+  color: black;
+  width: max-content;
+  margin-left: 44px;
+}
+
+.arrowIcon{
+  margin-top: 12px;
+}

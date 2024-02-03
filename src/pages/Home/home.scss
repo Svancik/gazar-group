@@ -1,0 +1,17 @@
+.homeWrap{
+    background-image: url("../../media/heroBG.svg"); 
+       background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.scroll{
+    overflow-y: clip;
+}
+
+.no-scroll{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+

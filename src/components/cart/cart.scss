@@ -1,0 +1,140 @@
+.cart{
+    position: absolute;
+    right: 100px;
+    width: 390px;
+    top: 50px;
+    z-index: 9999;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 3px 3px 43px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 43px -11px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 43px -11px rgba(0,0,0,0.75);
+    height: fit-content;
+    max-height: 90vh; /* Set a fixed height for the container */
+    overflow-y: auto; /* Enable scrolling */
+    overflow-x: hidden;
+    hr{
+        width:100%;
+          margin: auto;
+    }
+
+    h2{
+        margin-bottom: 10px;
+        text-align: center;
+        margin-top: -10px;
+        color: gray;
+        font-weight: 400;
+        font-size: 22px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 2px;
+        height: 70px;
+
+        .delete{
+            color: red;
+            font-size: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease-in;
+            &:hover{
+                color: #2879fe;
+            }
+        }
+        
+        img{
+            width: 62.5px;
+            height: 62.5px;
+            object-fit: cover;
+        }
+
+        .details {
+            height: 50px;
+            width: 280px;
+            position: relative;
+            h3{
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: -7px;
+            text-align: left;
+            line-height: 16px;
+            margin-bottom: 0px;
+        }
+
+        p{
+            color: gray;
+            font-size: 14px;
+            text-align: justify;
+            margin-top: -12px;
+  
+        }
+
+        .quantity{
+            position: absolute;
+            right: 0px;
+            top: 30px;
+            font-weight: 500;
+            color: #2879fe;
+            text-align: left;
+            margin-top: -17px;
+
+            &::after{
+                content: " ks";
+            }
+
+        }
+        }
+    }
+
+    .total{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    button{
+        width: 250px;
+        padding: 10px;
+        background-color: #2879fe;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none;
+        font-weight: 500;
+        margin-bottom: 20px;
+        margin: auto;
+        margin-top: 12.5px;
+        border: 1px solid #2879fe;
+        transition: all 0.3s ease-in;
+
+
+
+        &:hover{
+            background-color: white;
+            color: #2879fe;
+        }
+    }
+
+    .reset{
+        color: red;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+
+}   
+
+
+
+
+
+

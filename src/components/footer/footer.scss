@@ -1,0 +1,98 @@
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding:40px;
+    display: flex;
+    justify-content: left;
+    padding-left: 0px;
+    width: 100vw;
+
+    position: relative;
+  
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .middleSection{
+    display: flex;
+    width: 1900px;
+    margin: auto;
+  }
+  
+  .map {
+    width: 450px;
+    height: 200px;
+    background-color: #333; /* Placeholder background for the map */
+  }
+  
+  .company-data {
+    max-width: 600px;
+    margin-left: 40px;
+  }
+  
+  /* Additional styling for company data */
+  .company-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .row{
+    display: flex;      
+    gap: 12px;
+    flex: 1;
+    margin-bottom: 12.5px;
+
+    span{
+      margin-top: 5px;
+        line-height: 20px;
+        vertical-align: middle;
+        font-size: 19px;
+        font-weight: 500;
+        text-align: center;
+    }      
+    .iconWrap{
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        padding: 4px;
+        background-color: white;
+        border: 3px solid transparent;
+background-image: linear-gradient(white, rgb(255, 255, 255)), linear-gradient(315deg, rgb(236, 183, 37), rgb(250, 94, 94), rgb(255, 222, 160), rgb(250, 94, 94));
+background-origin: border-box;
+background-clip: padding-box, border-box;
+
+
+        .icon{
+            display: flex;
+            margin: auto;
+            line-height: 30px;
+            vertical-align: middle;
+            margin-top: 1px;
+            height: 20px;                    
+            width: 20px;
+            color: #fc8444 ;
+            color: black;
+        }
+    }            
+}
+  
+
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .map {
+      width: 100%;
+    }
+  
+    .company-data {
+      margin-top: 20px;
+    }
+  }
+  

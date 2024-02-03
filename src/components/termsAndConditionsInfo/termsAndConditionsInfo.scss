@@ -1,0 +1,42 @@
+.termsAndConditionsInfoWrapper{
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 4vh;
+    padding-top: 20px;
+    padding-bottom: 70px;
+
+    h1{
+        margin: auto;
+        font-weight: 400;
+        margin-top: 30px;
+       text-align: center;
+
+    }
+    hr{
+        width: 50%;
+        margin-bottom: 50px;
+        margin-top: 5px;
+    }
+
+    .terms-container {
+        font-family: 'Arial', sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .section {
+        margin-bottom: 20px;
+      
+        .section-heading {
+          color: #333;
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+      
+        p {
+          color: #666;
+          line-height: 1.5;
+        }
+      }
+
+}
