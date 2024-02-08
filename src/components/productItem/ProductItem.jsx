@@ -27,10 +27,8 @@ export const ProductItem = ({ product }) => {
         />
       </div>
       <div className="product-info">
-        <div className="info-row product-name">{foundProductDesc.name}</div>
-        <div className="info-row product-category">
-          {foundProductCategory.name}
-        </div>
+        <div className="product-name">{foundProductDesc.name}</div>
+        <div className="product-category">{foundProductCategory.name}</div>
       </div>
     </div>
   );

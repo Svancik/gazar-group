@@ -58,7 +58,7 @@ export const ProductItemDetails = ({ product }) => {
 
   return (
     <div className="productItemDetailsWrapper">
-      <GoBackButton />
+      
       <div className="left">
         <img
           className="productImage"

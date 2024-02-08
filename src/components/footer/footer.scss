@@ -15,7 +15,7 @@
 
   .middleSection{
     display: flex;
-    width: 1900px;
+    width: 80vw;
     margin: auto;
   }
   
@@ -95,4 +95,51 @@ background-clip: padding-box, border-box;
       margin-top: 20px;
     }
   }
+
+  @media screen and ((min-width: 1550px) and (max-width:1910px) and (orientation: landscape)) {
+    .footer{
+      padding: 20px;
+    }
+    .middleSection{
+      width: 95vw;
+      .map{
+        width: 420px;
+        height: 175px;
+        margin-top: 10px;
+      }
+      .company-name{
+        font-size: 20px;
+      }
+      .row{
+        span{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+
+@media screen and ((min-width: 1911px) and (max-width:2500px) and (orientation: landscape)) {
+  .footer{
+    padding: 20px;
+  }
+  .middleSection{
+    width: 80vw;
+    .map{
+      width: 420px;
+      height: 180px;
+      margin-top: 10px;
+    }
+    .company-name{
+      font-size: 22px;
+    }
+    .row{
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+  
+}
+
   

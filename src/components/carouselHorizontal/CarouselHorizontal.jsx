@@ -27,10 +27,7 @@ const images = [
 
 export const CarouselHorizontal = () => {
   return (
-    <div
-      className="carousel-container"
-      
-    >
+    <div className="carousel-container">
       <div className="carousel-row">
         {images.map((image, index) => (
           <img

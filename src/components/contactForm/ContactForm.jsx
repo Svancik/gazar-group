@@ -158,6 +158,7 @@ export const ContactForm = ({ isPopUp }) => {
                     placeholder="Zadejte technické zadání vašeho požadavku. Jaký typ svítidla hledáte? Kolik kusů? Do jakého termínu?"
                     value={formData.message}
                     onChange={handleChange}
+                    resize
                   />
                 </label>
                 <br />

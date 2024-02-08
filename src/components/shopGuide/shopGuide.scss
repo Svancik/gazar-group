@@ -61,8 +61,6 @@
   background-color: rgba(255,165,71,255);
   border: 3px solid white;
   color: white;
-
-  color: white;
   box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.6); 
 
 
@@ -79,4 +77,40 @@
 
 .arrowIcon{
   margin-top: 12px;
+}
+
+@media screen and ((min-width: 1600px) and (max-width:1900px) and (orientation: landscape)) {
+  .steps-container {
+  margin-top: 14px;
+  .step-number{
+    font-size: 14.5px;
+    line-height: 26px;
+    width: 27px;
+    height: 27px;
+  }
+  .step-text{
+    font-size: 11.5px;
+    margin-left: 40px;
+    margin-right: 6px;
+  }
+  .step{
+    padding: 0.75px 3px;  
+  }
+  }
+
+}
+
+@media screen and ((min-width: 1900px) and (max-width:2500px) and (orientation: landscape)) {
+  .step-number{
+  font-size: 14.5px;
+  line-height: 32px;
+  width: 34px;
+  height: 34px;
+}
+.step-text{
+  font-size: 13.5px;
+}
+.step{
+  padding: 4px 6px;  
+}
 }

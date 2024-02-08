@@ -16,7 +16,7 @@ export const Hero = () => {
         data-aos-duration="1800"
       >
         <source
-          src={require(`../../media/vlaknoZarovky.mp4`)}
+          src={require(`../../media/videos/vlaknoZarovky.mp4`)}
           type="video/mp4"
         />
       </video>

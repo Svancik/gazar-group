@@ -15,7 +15,7 @@ const ProductList = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   //konstanty slouží pro pagination
-  let postsPerPage = 40;
+  const [postsPerPage, setPostsPerPage] = useState(40);
   const [currentPage, setCurrentPage] = useState(1);
   const indexOfLastProduct = currentPage * postsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - postsPerPage;
@@ -69,6 +69,31 @@ const ProductList = () => {
       behavior: "instant", // Optionally, add smooth scrolling effect
     });
   }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Adjust postsPerPage based on screen width
+      if (window.innerWidth < 600) {
+        setPostsPerPage(20); // for small screens
+      } else if (window.innerWidth <= 1920) {
+        setPostsPerPage(27); // for medium screens
+      } else {
+        setPostsPerPage(40); // default for larger screens
+      }
+    };
+
+    // Initial call to set initial value
+    handleResize();
+
+    // Event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div
       className="product-list-container"

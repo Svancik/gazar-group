@@ -13,7 +13,7 @@ export const PopUpFinish = () => {
           />
         </span>
         <h1>Vaše poptávka byla dokončena!</h1>
-        <span>Děkujeme za Vaši objednávku! </span>
+        <span>Děkujeme za Vaši poptávku o cenovou nabídku! </span>
         <span>
           Na Vaší poptávce se právě pracuje a bude zpracována do 24 hodin a
           následně předána přepravní službě.{" "}

@@ -39,16 +39,32 @@
 
     .linear-background-select{
         width: 250px;
-        border: 3px solid black;
         border: 3px solid transparent;
         background-image: linear-gradient(white, rgb(255, 255, 255)), linear-gradient(315deg, rgb(236, 183, 37), rgb(250, 94, 94), rgb(255, 222, 160), rgb(250, 94, 94));
         background-origin: border-box;
         background-clip: padding-box, border-box;
-
-        
-
       }
 
+
+      @media screen and ((min-width: 1600px) and (max-width:1900px) and (orientation: landscape)) {
+        .linear-background-select{
+            border: 2.25px solid transparent;
+            width: 220px;
+        }
+        .categoryDropdownWrap select{
+            font-size: 10.5px;
+        }
+
+        .categoryDropdownWrap .subCategory{
+            font-size: 10px;
+        }
+
+        .categoryDropdownWrap .mainCategory{
+            font-size: 10px;
+
+        }
+
+      }
 
 
 }

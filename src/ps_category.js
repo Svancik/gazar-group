@@ -13,7 +13,7 @@ export const categories = [
   },
     {
     id_category: 12,
-    name: "Laryngoskopy, opthalmoskopy",
+    name: "Laryngoskopy",
     description: "",
   },
     {
@@ -44,10 +44,18 @@ export const categories = [
   },
   {
     id_category: 18,
-    name: "Výbojky XBO - lékařský xenon",
+    name: "XBO - lékařský xenon",
     description: "",
     //přidáno 271
   },
+  {
+    id_category: 19,
+    name: "Opthalmoskopy",
+    description: "",
+    //přidáno 271
+  },
+
+  
 
 
 
@@ -109,7 +117,7 @@ export const categories = [
   },
   {
     id_category: 37,
-    name: "Výbojky HBO -  rtuťové výbojky",
+    name: "HBO -  rtuťové výbojky",
     description: "Použití:fluorescenční mikroskopie,UV vytvrzování,využití v technologii optických kabelů",
   },
 

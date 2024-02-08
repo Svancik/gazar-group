@@ -39,3 +39,31 @@
     color: #fff;
   }
 }
+
+@media screen and ((min-width: 1600px) and (max-width:1920px) and (orientation: landscape)) {
+.paginationWrapper{
+  height: 40px;
+  margin-bottom: 25px;
+  .pagination-item{
+    padding: 6px 10px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    margin-right: 7.5px;
+  }
+}
+}
+@media screen and ((min-width: 1920px) and (max-width:2500px) and (orientation: landscape)) {
+.paginationWrapper{
+  height: 40px;
+  margin-bottom: 25px;
+
+  .pagination-item{
+    padding: 6px 10px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+   
+  }
+}
+}

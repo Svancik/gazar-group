@@ -1,13 +1,14 @@
 .howToOrderInfoWrapper{
-    height: 74vh;
-    max-width: 1000px;
+    min-height: 74vh;
+    max-width: 42vw;
     margin: auto;
-    margin-top: 65px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 
     h1{
         font-weight: normal;
         text-align: center;
-        margin-top: 25px;
+        padding-top: 20px;
     }
 
     hr{
@@ -18,7 +19,7 @@
 
     .howto-container {
         font-family: 'Arial', sans-serif;
-        width: 800px;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -30,12 +31,12 @@
         margin: auto;
         margin-top: 0px;
         margin-bottom: 10px;
-        font-size: 18px;
+        font-size: 1rem;
      
     }
       
       .section {
-        margin-bottom: 0px;      
+        margin-bottom: 30px;      
         
         &:nth-child(even){
           margin-left: 50px;
@@ -69,8 +70,18 @@
             background-color: #f75e4f; // Different color for the fourth step
 
         }
-    }
+    }   
 
-    
+}
 
+@media screen and (min-width: 1600px) and (max-width: 1910px)and (orientation: landscape) {
+  .howToOrderInfoWrapper{
+    max-width: 55vw;
+  }
+}
+
+@media screen and (min-width: 1911px) and (max-width: 2500px)and (orientation: landscape) {
+  .howToOrderInfoWrapper{
+    max-width: 50vw;
+  }
 }

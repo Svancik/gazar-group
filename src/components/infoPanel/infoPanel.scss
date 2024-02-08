@@ -1,26 +1,21 @@
 .infoPanelWrapper{
-    height: 8vh;
     max-width: 1820px;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 30px;
 
-    .left{
+    .columnsWrapper{
         width: 100%;
         display: flex;
         margin: auto;
         margin-left: 7.5px;
 
         .column{
-            flex-direction: column;
+            flex-direction: row;
             width: max-content;           
             margin: auto;
-        }
 
-        .row{
-            display: flex;      
-            gap: 12px;
-            flex: 1;
+        }
 
             span{
                 line-height: 45px;
@@ -28,18 +23,19 @@
                 font-size: 19px;
                 font-weight: 500;
                 text-align: center;
+                margin-top: 5px;
             }      
             .iconWrap{
                 border: 2px solid black;
                 border-radius: 50%;
                 width: 42px;
                 height: 42px;
-                padding: 4px;
+                padding: 6px;
                 background-color: white;
                 border: 3px solid transparent;
-        background-image: linear-gradient(white, rgb(255, 255, 255)), linear-gradient(315deg, rgb(236, 183, 37), rgb(250, 94, 94), rgb(255, 222, 160), rgb(250, 94, 94));
-        background-origin: border-box;
-        background-clip: padding-box, border-box;
+                background-image: linear-gradient(white, rgb(255, 255, 255)), linear-gradient(315deg, rgb(236, 183, 37), rgb(250, 94, 94), rgb(255, 222, 160), rgb(250, 94, 94));
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
    
 
                 .icon{
@@ -47,18 +43,78 @@
                     margin: auto;
                     line-height: 30px;
                     vertical-align: middle;
-                    margin-top: 3px;
-                    height: 35px;                    
-                    width: 35px;
+                    margin-top: 0px;
+                    height: inherit;                   
+                    width: inherit;
                     color: #fc8444 ;
                     color: black;
                 }
             }            
         }
+    }
 
-        hr{
-            width: 60%;
-            margin-left: 20px;
+
+
+/*    DESKTOPS AND LAPTOPS */
+//1600x900 HD+ LAPTOP
+@media screen and ((min-width: 1600px) and (max-width:1910px) and (orientation: landscape)) {
+    .infoPanelWrapper .columnsWrapper{
+        width: 1340px;
+
+        margin: auto;
+    }
+
+    .infoPanelWrapper .columnsWrapper .column{
+        width: max-content;
+        margin: auto;
+        text-align: center;        
+        justify-content: center;
+        margin-top: -15px;
+        margin-right: 0px;
+        .iconWrap{
+            width: 28px;
+            height: 28px;
+        }
+        span{
+            font-size: 13.5px;
+            margin-top: 0.5px;
+            margin-left: -5px;
         }
     }
 }
+//1920x1080 HD
+
+@media screen and ((min-width: 1911px) and (max-width:2500px) and (orientation: landscape)) {
+    .infoPanelWrapper{
+        margin-top: 30px;
+
+    }
+
+    .infoPanelWrapper .columnsWrapper{
+        width: 1600px;
+        margin-left: 0px;
+        margin: auto;
+        margin-left: 100px;
+
+    }
+
+    .infoPanelWrapper .columnsWrapper .column{
+        width: max-content;
+        margin: auto;
+        text-align: center;        
+        justify-content: center;
+        margin-top: -15px;
+        margin-right: 0px;
+        .iconWrap{
+            width: 35px;
+            height: 35px;
+        }
+        span{
+            font-size: 17px;
+            margin-top: 3px;
+            margin-left: -3px;
+        }
+    }
+}
+
+

@@ -124,7 +124,7 @@ export default class FinishOrderForm extends Component {
                 Telefonní číslo (+420){" "}
               </label>
               <input
-                type="number"
+                type="text"
                 id="phonenumber"
                 name="phone"
                 placeholder=""
@@ -133,7 +133,9 @@ export default class FinishOrderForm extends Component {
                 onChange={this.handleChange}
               />
               {this.state.errors.phone && (
-                <div className="alert alert-danger">Vyplňte správně tel. číslo</div>
+                <div className="alert alert-danger">
+                  Vyplňte správně tel. číslo
+                </div>
               )}
             </div>
           </div>

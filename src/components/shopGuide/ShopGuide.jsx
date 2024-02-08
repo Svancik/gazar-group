@@ -8,13 +8,13 @@ export const ShopGuide = () => {
       <div className="step">
         <div className="step-number">1</div>
         <div className="step-text">
-          Vyberte produkt pomocí filtru kategorie / textem.
+          Vyberte produkt pomocí filtru kategorie / textem
         </div>
       </div>
       <ArrowRightOutlinedIcon className="arrowIcon" />
       <div className="step">
         <div className="step-number">2</div>
-        <div className="step-text">Přidejte do košíku.</div>
+        <div className="step-text">Přidejte do košíku</div>
       </div>
       <ArrowRightOutlinedIcon className="arrowIcon" />
       <div className="step">
@@ -24,7 +24,7 @@ export const ShopGuide = () => {
       <ArrowRightOutlinedIcon className="arrowIcon" />
       <div className="step">
         <div className="step-number">4</div>
-        <div className="step-text">Vyplňte formulář.</div>
+        <div className="step-text">Vyplňte formulář</div>
       </div>
     </div>
   );

@@ -28,21 +28,19 @@ const Footer = () => {
             <div className="iconWrap">
               <LocationOnIcon className="icon" />
             </div>
-            <span> Liškova 1770/64, Předměstí, 412 01 Litoměřice.</span>
+            <span>ADRESA: Liškova 1770/64, Předměstí, 412 01 Litoměřice.</span>
           </div>
-
           <div className="row">
             <div className="iconWrap">
               <MailIcon className="icon" />
             </div>
-            <span>Mail: info@gazargroup.com</span>
+            <span>MAIL: info@gazargroup.com</span>
           </div>
-
           <div className="row">
             <div className="iconWrap">
               <PhoneIcon className="icon" />
             </div>
-            <span>Telefon: +702 050 899</span>
+            <span>TELEFON: +420 702 050 899</span>
           </div>
         </div>
       </div>
