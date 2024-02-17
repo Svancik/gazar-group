@@ -74,6 +74,23 @@
 
 }
 
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .howToOrderInfoWrapper{
+    max-width: 97vw;
+    .section {
+      margin-bottom: 30px;      
+      
+      &:nth-child(even){
+        margin-left: 0px;
+      }
+
+      &:nth-child(odd){
+        margin-left: 50px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1600px) and (max-width: 1910px)and (orientation: landscape) {
   .howToOrderInfoWrapper{
     max-width: 55vw;

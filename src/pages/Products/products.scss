@@ -1,6 +1,7 @@
 body{
 background-color: #ededed;
 }
+@media screen and ((min-width: 1300px) and (orientation: landscape)) {
 
 .productsWrap{
     background-image: url("../../media/backgroundImg/productsBG-left4.svg"); 
@@ -19,7 +20,7 @@ background-color: #ededed;
     width: 100vw;
 
 }
-
+}
 .scroll{
     overflow-y: clip;
 }

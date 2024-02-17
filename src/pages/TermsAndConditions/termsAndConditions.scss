@@ -1,7 +1,9 @@
+@media screen and ((orientation: landscape)) {
 .termsAndConditionsWrapper{
     background-attachment: fixed;
     background-size: cover;
     background-image: url("../../media/backgroundImg/finishOrderBG3.svg"); 
     height: max-content;
     margin-bottom: -20px;
+}
 }

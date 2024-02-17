@@ -72,10 +72,15 @@ const ProductList = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      // Adjust postsPerPage based on screen width
-      if (window.innerWidth < 600) {
-        setPostsPerPage(20); // for small screens
-      } else if (window.innerWidth <= 1920) {
+      const windowWidth = window.innerWidth;
+      console.log("windowWidth: ", windowWidth);
+
+      if (
+        windowWidth <= 1140 &&
+        window.matchMedia("(orientation: portrait)").matches
+      ) {
+        setPostsPerPage(36); // for small screens
+      } else if (windowWidth <= 1200) {
         setPostsPerPage(27); // for medium screens
       } else {
         setPostsPerPage(40); // default for larger screens

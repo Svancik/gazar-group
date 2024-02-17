@@ -58,7 +58,7 @@ export const ProductItemDetails = ({ product }) => {
 
   return (
     <div className="productItemDetailsWrapper">
-      
+      <GoBackButton />
       <div className="left">
         <img
           className="productImage"
@@ -121,28 +121,25 @@ export const ProductItemDetails = ({ product }) => {
             />
           </div>
         </div>
+      </div>
 
-        <div className="right" data-aos="fade-left" data-aos-duration="1200">
-          <h3>
-            Další produkty z kategorie <span>{foundProductCategory.name}</span>{" "}
-          </h3>
-          {familiarProducts.length > 0 && (
-            <>
-              <div className="similiarProducts">
-                <div className="similiarProducts-grid">
-                  {familiarProducts.map((product) => (
-                    <Link
-                      className="link"
-                      to={`/product/${product.id_product}`}
-                    >
-                      <ProductItem product={product} />
-                    </Link>
-                  ))}
-                </div>
+      <div className="right" data-aos="fade-left" data-aos-duration="1200">
+        <h3>
+          Další produkty z kategorie <span>{foundProductCategory.name}</span>{" "}
+        </h3>
+        {familiarProducts.length > 0 && (
+          <>
+            <div className="similiarProducts">
+              <div className="similiarProducts-grid">
+                {familiarProducts.map((product) => (
+                  <Link className="link" to={`/product/${product.id_product}`}>
+                    <ProductItem product={product} />
+                  </Link>
+                ))}
               </div>
-            </>
-          )}
-        </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

@@ -26,3 +26,10 @@
 
 @media screen and (min-width: 1920px) and (max-width: 2500px)and (orientation: landscape) {
 }
+
+@media screen and ((orientation: portrait)) {
+.backButton{
+    top:62.5px;
+    left: 67.5px;
+}
+}

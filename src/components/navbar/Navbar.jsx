@@ -22,10 +22,22 @@ export const Navbar = () => {
     <div className="navbarWrapper">
       {" "}
       <div className="dropdown-menu-container">
-        <div className="titleWrap">
-          <h1>GAZAR</h1>
-          <h2>GROUP</h2>
+        <Link className="link" to="/products">
+          <div className="titleWrap">
+            <h1>GAZAR</h1>
+            <h2>GROUP</h2>
+          </div>
+        </Link>
+        <div className="cartIconWrap">
+          <div className="topbar__basket topElement">
+            <ShoppingCartOutlinedIcon
+              onClick={() => setIsCartOpen(!isCartOpen)}
+              className="cartIcon"
+            />
+            <span>{products.length}</span>
+          </div>
         </div>
+        {isCartOpen && <Cart />}
         <div className="buttonWrap">
           <button className="toggle-button" onClick={toggleMenu}>
             <ListIcon
@@ -42,23 +54,23 @@ export const Navbar = () => {
           <div className="dropdown-menu">
             {/* Your dropdown menu items go here */}
             <div className="headerItem">
-              <Link to="/">
+              <Link className="link" to="/">
                 <span>O nás</span>
               </Link>
             </div>
 
             <div className="headerItem">
-              <Link to="/products">
+              <Link className="link" to="/products">
                 <span>Náš sortiment</span>
               </Link>
             </div>
             <div className="headerItem">
-              <Link to="/termsandconditions">
+              <Link className="link" to="/termsandconditions">
                 <span>Obchodní podmínky</span>
               </Link>
             </div>
             <div className="headerItem">
-              <Link to="/shopguide">
+              <Link className="link" to="/shopguide">
                 <span>Jak nakupovat</span>
               </Link>
             </div>

@@ -51,8 +51,28 @@
                 }
             }            
         }
-    }
+}
 
+/*    TABLET */
+@media screen and ((min-width: 768px) and (orientation: portrait)) {
+
+    .infoPanelWrapper .columnsWrapper .column{
+        padding: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: -15px;
+    .iconWrap{
+        width: 32px;
+        height: 32px;
+    }
+    span{
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}
+}
 
 
 /*    DESKTOPS AND LAPTOPS */

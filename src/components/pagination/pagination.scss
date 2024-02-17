@@ -1,5 +1,6 @@
 .currentPage{
-    background-color: #2879fe;    color: white;
+    background-color: #2879fe;    
+    color: white;
 }
 
 /* Pagination container style */
@@ -8,6 +9,7 @@
     width: max-content;
     margin: auto;
     margin-top: 25px;
+
 .pagination {
     display: flex;
     list-style: none;
@@ -40,6 +42,19 @@
   }
 }
 
+@media screen and ((min-width: 768px) and (orientation: portrait)) {
+.paginationWrapper{
+  height: 30px;
+  .pagination-item{
+    height: 14px;
+    padding: 8px 8px;
+    line-height: 14px;
+    font-size: 12px;
+    margin-right: 5.25px;
+  }
+}
+}
+
 @media screen and ((min-width: 1600px) and (max-width:1920px) and (orientation: landscape)) {
 .paginationWrapper{
   height: 40px;
@@ -49,7 +64,7 @@
     height: 18px;
     line-height: 18px;
     font-size: 14px;
-    margin-right: 7.5px;
+    margin-right: 5px;
   }
 }
 }

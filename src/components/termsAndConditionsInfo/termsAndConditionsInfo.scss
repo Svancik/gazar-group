@@ -41,3 +41,9 @@
       }
 
 }
+
+@media screen and ((orientation: portrait)) {
+  .termsAndConditionsInfoWrapper{
+    max-width: 95vw;
+  } 
+}

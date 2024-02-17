@@ -79,6 +79,14 @@
   margin-top: 12px;
 }
 
+@media screen and ((min-width: 768px) and (orientation: portrait)) {
+.steps-container{
+  display: none;
+}
+}
+
+
+
 @media screen and ((min-width: 1600px) and (max-width:1900px) and (orientation: landscape)) {
   .steps-container {
   margin-top: 14px;

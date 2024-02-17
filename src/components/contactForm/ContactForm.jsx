@@ -105,7 +105,7 @@ export const ContactForm = ({ isPopUp }) => {
       )}
       {/* phone view: */}
       <>
-        <div className="contactUsIconWrapper hide-on-phone">
+        <div className="contactUsIconWrapper">
           <ChatIcon className="contactUsIcon" onClick={toggleContact} />
         </div>
         {isContactFormOpen && (

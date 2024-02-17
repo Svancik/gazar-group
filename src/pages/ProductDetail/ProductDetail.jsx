@@ -6,7 +6,6 @@ import { ProductItemDetails } from "../../components/productItemDetails/ProductI
 import { ContactForm } from "../../components/contactForm/ContactForm";
 import Footer from "../../components/footer/Footer";
 import { products } from "./../../ps_products";
-import { GoBackButton } from "../../components/buttons/Buttons";
 
 export const ProductDetail = () => {
   //načtení id z URL
@@ -20,7 +19,7 @@ export const ProductDetail = () => {
   return (
     <div className="productDetailWrapper">
       <Navbar />
-      <GoBackButton />
+   
       <ProductItemDetails product={product} />
       <ContactForm isPopUp={true} />
       <Footer />

@@ -11,7 +11,7 @@ export default function Home() {
       <div className="homeWrap">
         <Navbar />
         <Hero />
-        <ContactForm />
+        <ContactForm isPopUp={true} />
       </div>
     </>
   );

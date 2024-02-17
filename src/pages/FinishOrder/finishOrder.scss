@@ -1,8 +1,13 @@
-.finishOrderWrapper{
+.finishOrderWrap{
+    height: 100vh;
     background-image: url("../../media/backgroundImg/finishOrderBG3.svg"); 
     background-attachment: fixed;
     background-size: cover;
-    min-height: 75vh;
+}
+
+.finishOrderWrapper{
+
+    min-height: 77.25vh;
     margin-bottom: 0px;
     padding-bottom: 0px;
     width: 100vw;
@@ -10,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 75vh; 
  
     h2{
         margin-top: 0px;
@@ -75,4 +79,19 @@
             color: #2879fe;
         }
     }
+}
+
+
+@media screen and ((min-width:768px) and (orientation: portrait)) {
+    .finishOrderWrap{
+    background-image: url("../../media/backgroundImg/cart-tabletBG.svg"); 
+    .finishOrderWrapper{
+        min-height: 76.5vh;
+
+        .backButton2{
+            top:62.5px;
+            left: 67.5px;
+        }
+    }
+}
 }

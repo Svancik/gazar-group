@@ -1,11 +1,13 @@
 .footer {
+  overflow-x: hidden;    
+
     background-color: #000000;
     color: #fff;
-    padding:40px;
+    padding:1vw;
     display: flex;
     justify-content: left;
     padding-left: 0px;
-    width: 100vw;
+    width: 99vw;
 
     position: relative;
   
@@ -76,6 +78,41 @@ background-clip: padding-box, border-box;
             color: black;
         }
     }            
+}
+
+@media screen and ((min-width: 768px) and (orientation: portrait)) {
+  .footer{
+    padding: 20px;
+  }
+  .middleSection{
+    width: 98vw;
+    .map{
+      width: 270px;
+      height: 135px;
+      margin-top: 10px;
+    }
+    .company-data{
+      margin-top: 5px;
+    }
+    .company-name{
+      margin-top: 0px;
+      font-size: 15px;
+    }
+    .row{
+      margin-bottom: 5px;
+      .iconWrap{
+        height: 16px;
+        width: 16px;
+        .icon{
+          height: 14px;
+          width: 14px;
+        }
+      }
+      span{
+        font-size: 12px;
+      }
+    }
+  }
 }
   
 

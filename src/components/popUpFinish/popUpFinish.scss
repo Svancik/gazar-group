@@ -68,3 +68,15 @@
             color: #2879fe;
         }
 }
+
+
+@media screen and ((min-width: 768px) and (orientation: portrait)) {
+    .orderFinished__backGroundWrapper{
+        height: 120vh;
+    }
+
+    .orderFinished__PopUpWrapper{
+        width: 70vw;
+    }
+}
+

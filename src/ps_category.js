@@ -18,7 +18,7 @@ export const categories = [
   },
     {
     id_category: 13,
-    name: "Svítidla pro operační sály",
+    name: "Operační sály",
     description: "",
   },
   {
@@ -67,7 +67,7 @@ export const categories = [
 },
   {
     id_category: 21,
-    name: "Optické halogenové žárovky",
+    name: "Optické halogen žárovky",
     description: "Optické halogenové žárovky",
   },
   // {
@@ -87,7 +87,7 @@ export const categories = [
   },
   {
     id_category: 31,
-    name: "Signální žárovky,kontrolky",
+    name: "Signální a kontrolky",
     description: "Signální žárovky,kontrolky",
   },
   {

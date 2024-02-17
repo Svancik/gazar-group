@@ -25,7 +25,7 @@ const FinishOrder = () => {
   };
 
   return (
-    <>
+    <div className="finishOrderWrap">
       {" "}
       <Navbar />
       <div className="finishOrderWrapper">
@@ -93,7 +93,7 @@ const FinishOrder = () => {
       </div>
       <ContactForm isPopUp={true} />
       <Footer />
-    </>
+    </div>
   );
 };
 

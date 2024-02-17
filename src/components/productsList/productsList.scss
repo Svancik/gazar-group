@@ -106,6 +106,26 @@
   margin-left: 10px;
 }
 
+@media screen and ((min-width: 768px) and (orientation: portrait)) {
+  .product-list-container{
+    max-width:100%;
+  }
+  .produft-grid-wrapper h2{
+    font-size: 16px;
+  }
+  .product-grid{
+    width: 98vw;
+    margin-left: -15px;  
+    grid-template-columns: repeat(auto-fill, minmax(110.5px, 1fr));
+    gap: 6px;
+  }
+  .product-list-container .input-textsearch{
+    width: 170px;
+  }
+
+}
+
+
 @media screen and ((min-width: 1591px) and (max-width:1910px) and (orientation: landscape)) {
   .product-list-container {
     display: flex;
