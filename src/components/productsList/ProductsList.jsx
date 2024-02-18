@@ -77,9 +77,15 @@ const ProductList = () => {
 
       if (
         windowWidth <= 1140 &&
+        windowWidth >= 760 &&
         window.matchMedia("(orientation: portrait)").matches
       ) {
         setPostsPerPage(36); // for small screens
+      } else if (
+        windowWidth <= 760 &&
+        window.matchMedia("(orientation: portrait)").matches
+      ) {
+        setPostsPerPage(54);
       } else if (windowWidth <= 1200) {
         setPostsPerPage(27); // for medium screens
       } else {

@@ -110,20 +110,22 @@ export const ProductItemDetails = ({ product }) => {
               />
               Přidat do košíku
             </button>
-            <span>Reference: {product.reference}</span>
-            {product.ean13 && (
-              <span>Číslo dílu výrobce (EAN): {product.ean13}</span>
-            )}
-            <div
-              dangerouslySetInnerHTML={{
-                __html: foundProductDesc.description,
-              }}
-            />
+            <div className="productDescriptionDesc">
+              <span>Reference: {product.reference}</span>
+              {product.ean13 && (
+                <span>Číslo dílu výrobce (EAN): {product.ean13}</span>
+              )}
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: foundProductDesc.description,
+                }}
+              />
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="right" data-aos="fade-left" data-aos-duration="1200">
+      <div className="right">
         <h3>
           Další produkty z kategorie <span>{foundProductCategory.name}</span>{" "}
         </h3>

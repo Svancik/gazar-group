@@ -80,6 +80,47 @@ background-clip: padding-box, border-box;
     }            
 }
 
+@media screen and ((min-width: 300px) and (max-width:767px) and (orientation: portrait)) {
+  .footer{
+    padding: 0px;
+    width: 100vw;
+    margin: 0px;
+    
+  }
+.footer .middleSection{
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: 0px;
+
+}
+
+.footer .middleSection .map{
+  display: none;
+}
+.footer .middleSection .company-data{
+  width: 100vw;
+  padding: 0px;
+  margin-left: 10px;
+}
+.footer .middleSection .company-name{
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.footer .middleSection .row .iconWrap{
+  font-size: 12px;
+  width: 18px;
+  height: 15px;
+  border: 1px solid transparent;
+  .icon{
+    width: 15px;
+    height: 15px;
+  }
+}
+.footer .middleSection .row span{
+  font-size: 12px;
+}
+}
+
 @media screen and ((min-width: 768px) and (orientation: portrait)) {
   .footer{
     padding: 20px;

@@ -81,6 +81,34 @@
     }
 }
 
+@media screen and ((min-width: 320px) and (max-width:767px) and (orientation: portrait)) {
+    .finishOrderWrap{
+        background-image: url("../../media/backgroundImg/cart-tabletBG.svg"); 
+    }
+    .finishOrderWrapper{
+        padding-top: 65px;
+        h2{
+            margin-top: 40px;
+        }
+        .verifyButton{
+            margin-top: 0px;
+            gap: 7.5px;
+            font-weight: 00;
+            margin-left: -15px;
+        }
+        .backButton2{
+            top:1px;
+            height: 27px;
+            background-color: transparent;
+            border: 1px solid #2879fe;
+            color: #2879fe;
+            left: 200px;
+            z-index: 9999999;
+        }
+    }
+
+
+}
 
 @media screen and ((min-width:768px) and (orientation: portrait)) {
     .finishOrderWrap{

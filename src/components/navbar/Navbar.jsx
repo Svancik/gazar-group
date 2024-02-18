@@ -16,6 +16,13 @@ export const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
+    setIsCartOpen(false);
+  };
+
+  const toggleShop = () => {
+    setMenuOpen(false);
+    setIsCartOpen(!isCartOpen);
+    setMenuOpen(false);
   };
 
   return (
@@ -50,30 +57,33 @@ export const Navbar = () => {
           </button>
         </div>
 
-        {isMenuOpen && (
-          <div className="dropdown-menu">
+        {isMenuOpen && !isCartOpen && (
+          <div
+            className="dropdown-menu"
+            data-aos="fade-down"
+            data-aos-duration="600"
+          >
             {/* Your dropdown menu items go here */}
-            <div className="headerItem">
-              <Link className="link" to="/">
+            <Link className="link" to="/">
+              <div className="headerItem">
                 <span>O nás</span>
-              </Link>
-            </div>
-
-            <div className="headerItem">
-              <Link className="link" to="/products">
+              </div>
+            </Link>
+            <Link className="link" to="/products">
+              <div className="headerItem">
                 <span>Náš sortiment</span>
-              </Link>
-            </div>
-            <div className="headerItem">
-              <Link className="link" to="/termsandconditions">
+              </div>
+            </Link>
+            <Link className="link" to="/termsandconditions">
+              <div className="headerItem">
                 <span>Obchodní podmínky</span>
-              </Link>
-            </div>
-            <div className="headerItem">
-              <Link className="link" to="/shopguide">
+              </div>
+            </Link>
+            <Link className="link" to="/shopguide">
+              <div className="headerItem">
                 <span>Jak nakupovat</span>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         )}
       </div>
@@ -109,14 +119,16 @@ export const Navbar = () => {
             </Link>
           </div>
         </header>
-        <div
-          className="cartIconWrap"
-          onClick={() => setIsCartOpen(!isCartOpen)}
-        >
-          <div className="topbar__basket topElement">
-            <ShoppingCartOutlinedIcon className="cartIcon" />
-            <span>{products.length}</span>
-          </div>
+        <div className="cartIconWrap">
+          <button className="toggle-button" onClick={toggleShop}>
+            <div className="topbar__basket topElement">
+              <ShoppingCartOutlinedIcon
+                className="cartIcon"
+                onClick={toggleShop}
+              />
+              <span>{products.length}</span>
+            </div>
+          </button>
         </div>
         {isCartOpen && <Cart />}
       </div>

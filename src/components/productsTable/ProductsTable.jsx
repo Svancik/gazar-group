@@ -24,11 +24,11 @@ const ProductsTable = () => {
         <table className="productTable">
           <thead>
             <tr>
-              <th>Obrázek</th>
+              <th></th>
               <th>Název produktu</th>
               <th>Kategorie</th>
               <th>Množství</th>
-              <th>Odebrat</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>

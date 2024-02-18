@@ -63,7 +63,7 @@ export const HowToOrderInfo = () => {
               <div className="step-number step2">2</div>
               <div className="step-text">
                 <b>PŘIDÁNÍ DO KOŠÍKU</b> - Zvolte počet kusů a přidejte zboží do
-                košíku / textem.
+                košíku.
               </div>
             </div>
           </div>

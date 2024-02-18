@@ -19,7 +19,6 @@ export const ProductDetail = () => {
   return (
     <div className="productDetailWrapper">
       <Navbar />
-   
       <ProductItemDetails product={product} />
       <ContactForm isPopUp={true} />
       <Footer />

@@ -30,6 +30,26 @@
   object-fit: contain;
 }
 
+@media screen and ((min-width: 320px) and (max-width:767px) and (orientation: portrait)) {
+  .carousel-container{
+    margin-top: -25px;
+    margin-bottom: 5px;
+  }
+  
+    .carousel-row{
+      padding: 0px 200px;
+      padding-right: 650px;
+      gap: 2.25px;
+      margin-left: -290px;
+    }
+  
+    .carousel-row img {
+      width: 52.25px;
+      height: 19.6px;
+    }
+
+}
+
 @media screen and ((min-width: 768px) and (orientation: portrait)) {
   .carousel-container{
     margin-top: -5px;

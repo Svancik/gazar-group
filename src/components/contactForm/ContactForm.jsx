@@ -3,6 +3,7 @@ import { useState } from "react";
 import MailIcon from "@mui/icons-material/Mail";
 import Check from "@mui/icons-material/Check";
 import ChatIcon from "@mui/icons-material/Chat";
+import CancelIcon from "@mui/icons-material/Cancel";
 import "./contactForm.scss";
 
 export const ContactForm = ({ isPopUp }) => {
@@ -125,6 +126,7 @@ export const ContactForm = ({ isPopUp }) => {
                 />
                 <div className="contactUs">
                   <span>Kontaktujte nás</span>
+                  <CancelIcon className="cancelIcon" onClick={toggleContact} />
                 </div>
               </div>
               <form onSubmit={handleSubmit}>

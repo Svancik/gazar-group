@@ -157,6 +157,53 @@
 
   }
   
+  @media screen and ((min-width: 320px) and (max-width:767px) and (orientation: portrait)) {
+    .productsTableWrapper{
+      min-width: 100vw;
+      max-width: 100vw;
+      .productTable{
+
+        thead tr th{
+          &:nth-child(3){
+            display: none;
+          }
+        }
+
+        tbody tr td{
+          &:nth-child(3){
+            display: none;
+          }
+        }
+
+        tbody tr {
+          .name{
+            min-width:auto;
+            width: 290px;
+            font-size: 16px;
+          }
+          .quantity{
+            vertical-align: middle;
+            align-items: center;
+            align-self: center;
+          }
+          .image{
+            min-width: 32px;
+            width: 36px;
+            padding: 0px;
+            .imageTable{
+              width: 36px;
+              min-width: 32px;
+              padding: 0px;
+            }
+          }
+          .delete{
+            width: 42px;
+          }
+
+        }
+      }
+    }
+  }
 
 @media screen and ((min-width:768px) and (orientation: portrait)) {
   .productsTableWrapper{

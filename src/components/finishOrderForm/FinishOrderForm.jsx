@@ -66,7 +66,7 @@ export default class FinishOrderForm extends Component {
       <div className="finishOrderFormWrapper">
         <form onSubmit={this.handleSubmit}>
           <div className="form-row" id="myform">
-            <div class="form-group col-md-4">
+            <div class="form-group">
               <label for="inputPassword4" className="label">
                 Křestní jméno
               </label>
@@ -156,7 +156,7 @@ export default class FinishOrderForm extends Component {
             </div>
             <div class="form-group col-md-6">
               <label for="inputAddress2" className="label">
-                Adresa bydliště (včetně čísla)
+                Adresa bydliště
               </label>
               <input
                 type="text"
@@ -191,12 +191,18 @@ export default class FinishOrderForm extends Component {
           <div className="form-row">
             <div className="form-group">
               <label htmlFor="comment">Komentář (nepovinné)</label>
-              <textarea name="" id="comment" rows="5" cols="200"></textarea>
+              <textarea
+                className="textarea-container"
+                name=""
+                id="comment"
+                rows="5"
+                cols="200"
+              ></textarea>
             </div>
           </div>
 
           <button className="finishOrder" type="submit">
-            <CheckIcon sx={{ width: "32px", height: "32px", margin: "0px" }} />{" "}
+            <CheckIcon className="checkIcon" />{" "}
             <span> Odeslat požadavek na cenovou nabídku</span>
           </button>
         </form>

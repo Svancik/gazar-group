@@ -16,7 +16,7 @@ import { GoBackButton } from "../../components/buttons/Buttons";
 
 const FinishOrder = () => {
   const products = useSelector((state) => state.cart.products);
-  const [verifyOrder, setVerifyOrder] = useState(false);
+  const [verifyOrder, setVerifyOrder] = useState(true);
 
   //TODO: Dodělat logiku když se dokončí vyplnění formulátře a dokončit verifikaci že má číslo určitou délku
   const handleFormSubmit = (formData) => {

@@ -2,7 +2,8 @@
     background-image: url("../../media/backgroundImg/productDetail-top3.svg"); 
     background-attachment: fixed;
  background-size: cover;
- height: 100vh;
+ height: 120vh;
+ position: relative;
 }
 
 @media screen and ((min-width: 1550px) and (max-width:1910px) and (orientation: landscape)) {

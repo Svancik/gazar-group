@@ -33,7 +33,7 @@ const CategoryDropdown = ({
   };
 
   return (
-    <div className="categoryDropdownWrap linear-background-select">
+    <div className="categoryDropdownWrap ">
       {/* <label htmlFor="category">Zvolte kategorii svítidel:</label> */}
       <select
         id="category"
@@ -41,7 +41,7 @@ const CategoryDropdown = ({
         onChange={handleCategoryChange}
         className="linear-background-select"
       >
-        <option value="All">-- Vyberte kategorii žárovek --</option>
+        <option value="All">Vyberte kategorii žárovek </option>
         {categories.map((category) => renderCategories(category))}
       </select>
     </div>

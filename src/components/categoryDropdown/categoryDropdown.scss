@@ -1,5 +1,5 @@
 .categoryDropdownWrap{
-
+  
    // box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
     margin-top: -3px;
     label{
@@ -44,6 +44,23 @@
         background-origin: border-box;
         background-clip: padding-box, border-box;
       }
+}
+
+@media screen and ((min-width: 320px) and (max-width:767px) and (orientation: portrait)) {
+ .categoryDropdownWrap .linear-background-select{
+    width: 55vw;
+    height: 37.5px;
+    border: 1px solid transparent;
+
+    option{
+        &:checked {
+            background-color: lightblue;
+            color: white;
+          }
+    }
+
+}
+
 }
 
 @media screen and ((min-width: 768px) and (orientation: portrait)) {

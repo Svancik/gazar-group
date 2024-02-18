@@ -102,6 +102,11 @@
     margin: auto;
     margin-top: 25px;
    
+    .checkIcon{
+      width: 32px;
+      height: 32px;
+      margin: 0px;
+    }
 
     &:hover{
         background-color: white;
@@ -120,3 +125,60 @@
   // Customize the styling for the CheckIcon
   // Add your specific styling for the CheckIcon here (if needed)
   
+  @media screen and ((min-width: 320px) and (max-width:767px) and (orientation: portrait)) {
+.finishOrderFormWrapper{
+  width: 100vw;
+  margin-top: 30px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  .form-group{
+    padding: 5px;
+    margin-right: 0px;
+    margin-left: -5px;
+    .nameInput{
+      width: 97.5%;
+    }
+    .nameInput2{
+      width: 97.5%;     
+    }
+    input{
+      width: 97.5%;
+    }
+    gap: 0px;
+
+    .textarea-container {
+    
+      // Set the number of rows and columns
+      textarea {
+        rows: 4; // Set the number of rows
+        cols: 20; // Set the number of columns
+        // Add any other styling properties as needed
+        resize: none; // Disable textarea resizing, if desired
+      }
+    }
+  }
+
+
+  .form-row{
+    gap: 2px;
+    width: 95vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  .finishOrder{
+    width: 100vw;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    .checkIcon{
+      display: none;
+    }
+  }
+  
+}
+  }
