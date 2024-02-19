@@ -86,23 +86,38 @@
   .section {
     margin-bottom: 30px; 
     width: 95%;     
+    margin-left: 1px;
+
+    ul{
+      margin-left: -50px;
+    }
     
     .step{
-      width: 90vw;
+      width: 95vw;
       overflow-wrap: break-word;
+      border: none;
+      background-color: transparent;
+      border-radius: 1px;
+    
     }
     
     .step-number{
-      width: 70px;
-      height: 70px;
-      font-size: 32px;
-      line-height: 70px;
+      width: 32px;
+      height: 32px;
+      font-size: 22px;
+      line-height: 32px;
       vertical-align: middle;
+      margin-top: 16px;
+      margin-left: 10px;
+     
+     
+     
     }
 
     .step-text{
-      padding-left: 35.5px;
       text-align: left;
+      margin-left: 50px;
+      line-height: 25px;
 
     }
 
@@ -112,7 +127,7 @@
     }
 
     &:nth-child(odd){
-      margin-left: 5px;
+      margin-left: 0px;
     }
   }
 }

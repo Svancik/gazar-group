@@ -22,37 +22,35 @@ export const Cart = () => {
 
   return (
     <div className="cart" data-aos="zoom-in" data-aos-duration="600">
-      <h2>
-        {" "}
-        Obsah Vašeho košíku <ShoppingCartOutlinedIcon className="cartIcon" />
-      </h2>
-      {products.map((item) => (
-        <>
-          <hr />
-          <div className="item" key={item.id}>
-            <img
-              src={require(`../../media/productImages/${item.id}.jpg`)}
-              alt=""
-            />
-            <div className="details">
-              <h3>{item.name}</h3>
-              <div className="quantity">{item.quantity}</div>
-              <p>{item.category.substring(0, 150)}</p>
+      <h2> Obsah Vašeho košíku</h2>
+      <div className="listofItems">
+        {products.map((item) => (
+          <>
+            <hr />
+            <div className="item" key={item.id}>
+              <img
+                src={require(`../../media/productImages/${item.id}.jpg`)}
+                alt=""
+              />
+              <div className="details">
+                <h3>{item.name}</h3>
+                <div className="quantity">{item.quantity}</div>
+                <p>{item.category.substring(0, 150)}</p>
+              </div>
+              <DeleteOutlinedIcon
+                className="delete"
+                onClick={() => dispatch(removeItem(item.id))}
+              />
             </div>
-            <DeleteOutlinedIcon
-              className="delete"
-              onClick={() => dispatch(removeItem(item.id))}
-            />
-          </div>
-        </>
-      ))}
-
+          </>
+        ))}
+      </div>
       {products.length > 0 ? (
         <Link to="/checkout" className="link">
           <button>ZOBRAZIT KOŠÍK</button>
         </Link>
       ) : (
-        <div>
+        <div className="cartEmpty">
           <span>Přidejte produkty do košíku.</span>
         </div>
       )}

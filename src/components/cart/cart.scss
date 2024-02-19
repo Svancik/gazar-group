@@ -137,8 +137,24 @@
     .cart{
         right:0%;
         width: 100vw;
-        top: 50px;
+        top: 47.5px;
         padding: 0px;
+        max-height: 93.5vh;
+
+        .cartEmpty{
+            padding: 20px;
+            margin: auto;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-style: italic;
+            text-align: center;
+        }
+
+        .listOfItems{
+            height: fit-content;
+            max-height: 60vh; /* Set a fixed height for the container */
+            overflow: auto; 
+        }
         h2{
             padding-top: 20px;
         }
@@ -156,8 +172,9 @@
             display: flex;
             justify-content: center;
             margin-top: 0px;
-            border: 1px solid red;
             padding: 12px;
+            color: white;
+            background-color: red;
           
         }
     
@@ -176,6 +193,9 @@
     
             p{
                 margin-top: 2px;  
+            }
+            .quantity{
+                margin-top: 5px;
             }
             }
         }

@@ -69,6 +69,20 @@
         }
 }
 
+@media screen and ((min-width: 320px) and (max-width:767px) and (orientation: portrait)) {
+    .orderFinished__backGroundWrapper{
+        height: 108.75vh;
+        width: 100vw;
+    }
+
+    .orderFinished__PopUpWrapper{
+        width: 78vw;
+
+        .continueShopping{
+            width: 75vw;
+        }
+    }
+}
 
 @media screen and ((min-width: 768px) and (orientation: portrait)) {
     .orderFinished__backGroundWrapper{

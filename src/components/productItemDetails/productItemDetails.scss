@@ -343,7 +343,7 @@
             z-index: 99999;
         
             h3{
-                font-size: 18px;
+                font-size: 15px;
                 span{
                     color: #2879fe;
                     text-transform: uppercase;
@@ -351,11 +351,11 @@
             }
             .similiarProducts{
                 background-color: rgb(226, 226, 226);
-                width: 80vw;
+                width: 95vw;
                 justify-content: center;
                 margin: auto;
                 box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6); 
-
+                overflow-x: hidden;
                 display: flex;
                 z-index: 999999;
                 .similiarProducts-grid{
